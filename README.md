@@ -13,6 +13,7 @@ HeadlessUI@1.7.5
 heroicons@2.0.13
 
 ## 檔案結構
+```
 ├── App.vue
 ├── assets
 │  └── vue.svg
@@ -25,9 +26,11 @@ heroicons@2.0.13
 │  └── TaskList.vue
 ├── main.js
 └── style.css
+```
 
 ## Components:
-
+Component 結構佈局會單獨使用 `layout` 資料夾的管理
+資料交互邏輯集中放至在 `App.vue` 檔案，並透過 Props function 的方式向下操作
 ### App:
 #### 資料層
 ```js
