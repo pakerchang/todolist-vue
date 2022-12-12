@@ -1,12 +1,10 @@
 <script setup>
-import { useTaskList } from "@/store/taskList";
 import { Combobox, ComboboxInput } from "@headlessui/vue";
 import LayoutAddTask from '@/components/layout/LayoutAddTask.vue';
 import { PlusIcon } from '@heroicons/vue/24/outline';
 import { ref } from 'vue';
 
 const taskQuery = ref('');
-const taskStore = useTaskList();
 
 const props = defineProps({
   onSubmit: Function
