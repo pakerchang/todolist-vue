@@ -1,6 +1,5 @@
 <template >
-  <div class="w-1/5 flex flex-col mt-16 border rounded-md shadow-xl">
-    <slot name="title"></slot>
-    <slot name="taskBar"></slot>
+  <div class="w-1/5 flex mt-16 rounded-md shadow-xl bg-white">
+    <slot></slot>
   </div>
 </template>

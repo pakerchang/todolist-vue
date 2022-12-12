@@ -1,5 +1,6 @@
 <template>
   <LayoutTaskList>
+    <!-- Task List -->
     <RadioGroup class="w-1/3 h-full flex flex-col shadow-xl rounded-lg">
       <RadioGroupLabel class="text-center py-2 shadow-sm">Task List</RadioGroupLabel>
       <RadioGroupOption class="my-3 h-8 flex px-4 justify-between items-center" v-for="(item, index) in props.taskData"
@@ -15,9 +16,9 @@
         </div>
       </RadioGroupOption>
     </RadioGroup>
-
+    <!-- Check List -->
     <RadioGroup class="w-1/3 h-full flex flex-col shadow-xl rounded-lg">
-      <RadioGroupLabel class="text-center py-2 shadow-sm">Check List</RadioGroupLabel>
+      <RadioGroupLabel class="text-center py-2 shadow-sm">Done</RadioGroupLabel>
       <RadioGroupOption class="my-3 h-8 flex px-4 justify-between items-center" v-for="(item, index) in props.checkData"
         :key="item">
         {{ item }}

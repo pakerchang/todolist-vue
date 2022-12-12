@@ -13,18 +13,14 @@ const props = defineProps({
 </script>
 <template>
   <LayoutAddTask>
-    <template #title>
-      <h1>Add Task</h1>
-    </template>
-    <template #taskBar>
-      <Combobox>
-        <div class="w-full flex">
-          <ComboboxInput @change="taskQuery = $event.target.value" @keyup.enter="props.onSubmit(taskQuery)" />
-          <button @click="props.onSubmit(taskQuery)">
-            <PlusIcon class="w-6 h-6" />
-          </button>
-        </div>
-      </Combobox>
-    </template>
+    <Combobox>
+      <div class="w-full flex">
+        <ComboboxInput class="w-full rounded-lg px-3 py-2 focus: outline-none" @change="taskQuery = $event.target.value"
+          @keyup.enter="props.onSubmit(taskQuery)" placeholder="Add new task" />
+        <button class="pr-3" @click="props.onSubmit(taskQuery)">
+          <PlusIcon class="w-6 h-6" />
+        </button>
+      </div>
+    </Combobox>
   </LayoutAddTask>
 </template>
