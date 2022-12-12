@@ -12,3 +12,9 @@ Pinia@2.0.28
 TailwindCSS@3.2.4
 HeadlessUI@1.7.5
 heroicons@2.0.13
+
+## Components 
+### TaskBar
+### TaskList
+1. Task list
+2. Check list
