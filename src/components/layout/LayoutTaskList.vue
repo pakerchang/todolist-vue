@@ -1,5 +1,5 @@
 <template>
-  <div class="w-1/4 h-[80%] flex flex-col mt-8 shadow-xl rounded-lg">
+  <div class="w-[80%] h-[80%] flex justify-around mt-8">
     <slot></slot>
   </div>
 </template>
