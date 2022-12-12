@@ -39,9 +39,12 @@ const taskList = ref([]) // 存放新增後待辦事項;
 const checkList = ref([]); // 存放已完成事項
 ```
 #### 事件引用 ( Function )
-`handleSubmit` --> 當使用者點擊 `+` 或點擊 `Enter` 時會將輸入資料存入 `taskList`
-`handleCheck` --> 當使用者點擊 `TaskItem` 中的確認時，會移除 `taskList` 並將資料轉移至 `checkList` 顯示
-`handleDelete` --> 透過 Function props: `type` 區分事件觸發清單，並移除對應的欄位事項 (`taskList` / `checkList`)
+`handleSubmit` --> 當使用者點擊 `+` 或點擊 `Enter` 時會將輸入資料存入 `taskList`   
+
+`handleCheck` --> 當使用者點擊 `TaskItem` 中的確認時，會移除 `taskList` 並將資料轉移至 `checkList` 顯示   
+
+`handleDelete` --> 透過 Function props: `type` 區分事件觸發清單，並移除對應的欄位事項 (`taskList` / `checkList`)   
+
 ### Layouts:
 > Path: src/components/layout
 1. `LayoutPublic.vue` 主視窗頁面組件佈局
