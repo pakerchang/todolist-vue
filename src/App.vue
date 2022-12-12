@@ -14,6 +14,6 @@
 </template>
 <script setup>
 import LayoutPublic from '@/components/layout/LayoutPublic.vue';
-import AddTask from '@/components/AddTask.vue';
 import LayoutAddTask from '@/components/layout/LayoutAddTask.vue';
+import AddTask from '@/components/AddTask.vue';
 </script>
